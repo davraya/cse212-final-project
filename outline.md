@@ -6,7 +6,7 @@
 - Description
 - Python implementaion
 - Example: The line to pay your food at the Crossroads. 
-- Problem: Create a Queue with 5 Amazon order and dequeue    them as you ship them. Display the order information after being dequeued. 
+- Problem: Create a Queue with 5 Amazon order and dequeue them as you ship them. Display the order information after being dequeued. 
   
   
 # Set
