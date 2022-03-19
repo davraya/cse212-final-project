@@ -6,11 +6,21 @@ A queue is a data structure that implements the first in first out principle.
 ## Python implementation
 In python a queue is implemented with a list. Appending when adding a new element to the queue (queuing), but poping the element in index 0 when removing (dequeuing). 
 
+## Common operations efficiency
+| Common Queue Operation | Big O notation efficiency |
+| ---------------------- | --------------------------|
+| enqueue | O(1)
+| dequeue | O(n)
+| size | O(1)
+| empty | O(1)
+
 ## Example
 A good exapmle of a queue is any kind of line. For example the line that is made in the Crossroads when trying to pay your food is a queue. Becaue the first one that makes it to the line is the first one that gets out(pays for his/her food.)
 
 ## Probelm
 Create a Queue with 5 Amazon order and dequeue them as you ship them. Display the order information after being dequeued.
+
+### Possible Solution
 
 ```
 class Queue:
