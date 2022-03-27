@@ -1,41 +1,12 @@
-class Queue:
+collection = set()
 
-    
+again = "y"
 
-    def __init__(self):
-        self.orders = []
+while again == "y":
+    card = input("Enter the name of the player: ")
+    if card in collection:
+        print("Card already in the collection")
+    collection.add(card)
+    again = input("Want to add another card?(y,n)")
 
-    def place_order(self): 
-        # enqueue
-        name = input("Enter item's name: ")
-        price = int(input("Enter item's price"))
-
-        self.orders.append(Order(name, price))
-
-    def ship_order(self):
-        # dequeue
-        order = self.orders.pop(0)
-        print(f"The item {order.name} that costed ${order.price} has been shiped")
-        
-
-
-class Order:
-        def __init__(self, name, price):
-            self.name = name
-            self.price = price
-
-
-orders = Queue()
-orders.place_order()
-orders.place_order()
-orders.place_order()
-orders.place_order()
-orders.place_order()
-orders.ship_order()
-orders.ship_order()
-orders.ship_order()
-orders.ship_order()
-orders.ship_order()
-
-    
-        
+print(collection)
