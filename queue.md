@@ -10,7 +10,8 @@ In python a queue is implemented with a list. Appending when adding a new elemen
 | Common Queue Operation | Big O notation efficiency |
 | ---------------------- | --------------------------|
 | enqueue | O(1)
-| dequeue | O(n)
+| dequeue | O(n) (Assuming a dynamic array was used
+| dequeue| 0(1) (Assuming a linked list was used)
 | size | O(1)
 | empty | O(1)
 
