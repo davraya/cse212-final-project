@@ -18,6 +18,20 @@ In python a set is implemented by using the set keyword. You add and remove by u
 An example of how a set might be used is in a collection of cards.
 Lets say you are a Pokemon enthusiast and collect Pokemon card, and want to keep track of which one you have. In this case you could try to add duplicates as much as you can, but it will never be added. This is good because you just want to know which ones you have and a set is perfect for searching for membership. 
 
+```
+class CardCollection:
+
+    def __init(self):
+        self.card = set()
+
+    def add_new_card(self):
+        name = input("Pokemon's name: ")
+        if name in self.cards:
+            print("Already have card")
+        else:
+            self.people.add(name)  
+```
+
 ## Probelm
 Create a set of baseball cards. If the user tries to buy a card that he or she already has display a message to the user. Represent the cards with a string of a baseball player. 
 
@@ -38,4 +52,6 @@ while again == "y":
 print(collection)
 
 ```
+
+[Go back to Home Page](0-welcome.md)
 
